@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_o_options",
+  "info": {
+    "displayName": "options",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "options": {
+      "type": "string"
+    },
+    "correct": {
+      "type": "boolean"
+    }
+  }
+}

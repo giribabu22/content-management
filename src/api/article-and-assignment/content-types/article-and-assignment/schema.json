@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_and_assignments",
+  "info": {
+    "singularName": "article-and-assignment",
+    "pluralName": "article-and-assignments",
+    "displayName": "article-and-assignment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "enumeration",
+      "enum": [
+        "article",
+        "assignment"
+      ],
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

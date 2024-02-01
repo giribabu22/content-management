@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mcqs",
+  "info": {
+    "singularName": "mcq",
+    "pluralName": "mcqs",
+    "displayName": "MCQ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "questions": {
+      "type": "string",
+      "required": true
+    },
+    "module": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::module.module",
+      "inversedBy": "mcqs"
+    },
+    "options": {
+      "type": "dynamiczone",
+      "components": [
+        "o.options"
+      ],
+      "required": true
+    },
+    "quiz": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::quiz.quiz",
+      "inversedBy": "mcqs"
+    }
+  }
+}
